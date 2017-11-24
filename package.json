@@ -1,0 +1,19 @@
+{
+  "name": "aryballe-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd src/client && npm start",
+    "server": "cd src/server && npm start",
+    "install-client": "cd src/client && npm install",
+    "install-server": "cd src/server && npm install",
+    "start": "concurrent \"npm run client\" \"npm run server\"",
+    "install": "concurrent \"npm run install-client\" \"npm run install-server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
